@@ -1,0 +1,24 @@
+$# Session file patran.ses.02 started recording at 02-Mar-25 20:41:05
+$# Build: 26.0.758311 Tue Sep 15 06:50:35 PDT 2020
+$# Recorded by: Patran 2020
+uil_file_open.go( "C:\Users\Chen Kenan\Desktop\allinone\test.db" )
+$# Database version 3.21 created by Patran 2020 successfully opened.
+$# Warning reported in application FILE by application Journal
+$#     Journal file C:\Users\Chen Kenan\Desktop\allinone\test.db.jou does not 
+$# exist. No journal file will be created.
+$# FLEXlm initialization complete.  Acquiring license(s)...
+$# License File: 27500@localhost
+$# Patran 2020 has obtained 1 concurrent license(s) from FLEXlm per a request 
+$# to execute on Windows node DESKTOP-6107O0O(c87f5457249f) (Windows 6.2 (
+$# Build 9200: Service Pack 0)) at 02-Mar-25 20:41:06.
+$# Begin Reading RMB Menu definitions
+$# Done Reading RMB Menu definitions
+$# Loading dynamic library D:\Program 
+$# Files\MSC.Software\Patran_x64\2020\loads_browser.dll
+$# ‡Ì∏A shared library 'Loads Browser', Version 2020, Revision 3, Patch 0, 
+$# has been loaded for: MSC.Patran.
+ga_view_aa_set( -31.525467, 1.585262, -33.177776 )
+uil_toolbar.shaded_smooth(  )
+uil_file_close.goquit(  )
+$# Flushing the User Data Manager
+$# Session file patran.ses.02 stopped recording at 02-Mar-25 20:42:19

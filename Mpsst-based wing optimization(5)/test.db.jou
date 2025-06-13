@@ -1,0 +1,209 @@
+$# Creating journal file C:\Users\Chen Kenan\Desktop\allinone\test.db.jou at 
+$# 03-Mar-25 13:27:19
+uil_file_rebuild.start("D:\Program Files\MSC.Software\Patran_x64\2020/temp" // @
+"late.db","C:\Users\Chen Kenan\Desktop\allinone\test.db")
+$# Synchronizing the User Data Manager
+set_current_dir( "C:\Users\Chen Kenan\Desktop\allinone" )
+$# The current working directory has been changed to the database location 
+$# shown.                                                                     
+$#                                                                            
+$#                                   
+nastran_input_import( "C:\Users\Chen Kenan\Desktop\allinone\latest.bdf",  @
+"default_group", 11, [TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, TRUE, FALSE,  @
+TRUE, TRUE], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, @
+ 0], [-2000000000, -2000000000, -2000000000, -2000000000, -2000000000,  @
+-2000000000, -2000000000, -2000000000, 0, 0, 0] )
+$# Loading dynamic library D:\Program 
+$# Files\MSC.Software\Patran_x64\2020\bin\exe\nifimp.dll
+$# Creating Nastran Database using SOL nifimp_v22: Success
+$# Importing data...
+$# 8589 Nodes written to database.
+$# 2 Materials written to database.
+$# Question from application FILE
+$#     Duplicate composite properties have been detected by the same material 
+$# name "86ceng" in the input deck. Do you wish to create unique composite 
+$# material properties for each?
+$? YES 36002390 
+$# 8179 Elements written to database.
+$# 52 Property Sets written to database.
+$# 20 MPCs written to database.
+$# 4 Case Control lines/comments written to database.
+$# 143 unrecognized Bulk Data lines/comments written to database.
+$# 147 total unrecognized entities/comment lines written to database.
+$# 1 Load Cases written to database.
+$# 1 Load Sets of type "force" written to database.
+$# 1 Load Sets of type "moment" written to database.
+$# 2 Load Sets of type "pload4" written to database.
+$# 1 Load Sets of type "spc1" written to database.
+$# Reading of MSC.Nastran input file completed.
+uil_imaging_bw_reverse(  )
+ui_repaint_tree( TRUE )
+sys_poll_option( 2 )
+ga_group_create_groups( 327682, "bot", 20, ["botback0", "botback1", "botback2" @
+, "botback3", "botback4", "botback5", "botback6", "botback7", "botback8",  @
+"botback9", "botfront0", "botfront1", "botfront2", "botfront3", "botfront4",  @
+"botfront5", "botfront6", "botfront7", "botfront8", "botfront9"], 0, [""] )
+$# Group "bot" is created with 1840 entities.
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_create_groups( 327682, "mid", 12, ["conm2", "pshell.1", "pshell.10",  @
+"pshell.17", "pshell.2", "pshell.3", "pshell.4", "pshell.5", "pshell.6",  @
+"pshell.7", "pshell.8", "pshell.9"], 0, [""] )
+$# Group "mid" is created with 13051 entities.
+sys_poll_option( 0 )
+sys_poll_option( 2 )
+ga_group_create_groups( 327682, "top", 20, ["topback0", "topback1", "topback2" @
+, "topback3", "topback4", "topback5", "topback6", "topback7", "topback8",  @
+"topback9", "topfront0", "topfront1", "topfront2", "topfront3", "topfront4",  @
+"topfront5", "topfront6", "topfront7", "topfront8", "topfront9"], 0, [""] )
+$# Group "top" is created with 1838 entities.
+sys_poll_option( 0 )
+msc_dra_init_stream(  )
+msc_dra_add_param( "DATABASE", "C:\Users\Chen Kenan\Desktop\allinone\test.db" )
+msc_dra_add_param( "JOBNAME", "latest" )
+msc_dra_add_param( "RESULTS FILE", "C:\Users\Chen Kenan\Desktop\allinone\l" // @
+"atest.xdb" )
+msc_dra_add_param( "OBJECT", "Result Entities" )
+msc_dra_add_param( "ANALYSIS TYPE", "Structural" )
+msc_dra_add_param( "DIVISION TOLERANCE", "1.0E-8" )
+msc_dra_add_param( "NUMERICAL TOLERANCE", "1.0E-4" )
+msc_dra_add_param( "MODEL TOLERANCE", "0.0049999999" )
+msc_dra_add_param( "ROTATIONAL NODAL RESULTS", "OFF" )
+msc_dra_add_param( "STRESS/STRAIN INVARIANTS", "OFF" )
+msc_dra_add_param( "PRINCIPAL DIRECTIONS", "OFF" )
+msc_dra_add_param( "ELEMENT RESULTS POSITIONS", "Nodal       " )
+msc_dra_add_param( "TITLE DESCRIPTION", "ON" )
+msc_dra_finish_stream(  )
+analysis_import( "MSC.Nastran", "latest", "Attach Results File No Job",  @
+"C:\Users\Chen Kenan\Desktop\allinone\latest.xdb", TRUE )
+$# Attaching Direct Results Access file: "C:\Users\Chen 
+$# Kenan\Desktop\allinone\latest.xdb"
+$# XDB file created by "MSC.NASTRAN V2020" on 12/23/2024 using "VENDOR:INTEL  
+$#               MODEL:XEON/6733 (DESKTOP-6 OPSYS:WINDOWS 10 EDUCATIO"
+$# *** Begin: Attach Result File ***
+$# Processing result load case: SC1:2
+$# Processing result sub-case: Static Subcase
+$# Total execution time in real seconds:        0.000
+$# Total execution time in CPU  seconds:        0.187
+$# *** End:   Attach Result File ***
+res_display_tool_unpost( "Deformation", "default_Deformation" )
+res_data_load_dbresult( 0, "Nodal", "Scalar", "2.SC1", "A1:Static Subcase",  @
+"Stress Invariants", "Von Mises", "At Z1", "", "Default", "DeriveAverage",  @
+"All", "ShapeFunc" )
+res_data_title( 0, "Nodal", "Scalar", 1, [ @
+"$POFF@@@$PT: @@@$LCN, @@@$SCN, @@@$PRN, @@@$SRN, @@@$DRVL, @@@$LN "] )
+res_display_fringe_create( "", "FreeFaces", 0, [""], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.", "LabelStyle:Exponential, 12, White, 3"], TRUE )
+res_display_fringe_post( "", 0, "Nodal", TRUE, TRUE )
+ga_viewport_location_set( "default_viewport", -3.335322, 0.616203, 1 )
+ga_viewport_location_set( "default_viewport", 0.000000, 0.000000, 1 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 3, ["bot", "mid",  @
+"top"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 2, ["bot", "top"] )
+ga_view_aa_set( -100.466377, -22.053629, -43.604591 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 3, ["bot", "mid",  @
+"top"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 2, ["mid", "top"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 1, ["mid"] )
+ga_view_aa_set( -148.475250, -0.243794, -60.506653 )
+ga_view_center_set( -25.558960, 8.564209 )
+ga_view_zoom_set( 344.498444 )
+ga_view_center_set( -41.997467, 7.317993 )
+ga_view_zoom_set( 306.220825 )
+ga_view_center_set( -55.554352, 6.526733 )
+ga_view_zoom_set( 272.196289 )
+ga_view_center_set( -67.323608, 5.917145 )
+ga_view_zoom_set( 241.952255 )
+ga_view_center_set( -77.618500, 5.375366 )
+ga_view_zoom_set( 215.068665 )
+ga_view_center_set( -78.100067, 4.300964 )
+ga_view_zoom_set( 191.172150 )
+ga_view_center_set( -78.528076, 3.345932 )
+ga_view_zoom_set( 169.930801 )
+ga_view_center_set( -78.908600, 2.496994 )
+ga_view_zoom_set( 151.049606 )
+ga_view_center_set( -79.350861, 1.742401 )
+ga_view_zoom_set( 134.266312 )
+ga_view_center_set( -79.790100, 1.071655 )
+ga_view_zoom_set( 119.347832 )
+ga_view_center_set( -80.427246, 0.434387 )
+ga_view_zoom_set( 106.086960 )
+ga_view_aa_set( -131.827942, -5.543277, -48.045052 )
+ga_view_aa_set( -125.827927, -5.543282, -48.045052 )
+ga_view_aa_set( -166.793289, -6.487730, -47.714542 )
+ga_view_center_set( -78.268692, -4.520409 )
+ga_view_zoom_set( 119.347832 )
+ga_view_center_set( -75.099945, -9.724434 )
+ga_view_zoom_set( 134.266312 )
+ga_view_center_set( -71.535126, -15.578926 )
+ga_view_zoom_set( 151.049606 )
+ga_view_center_set( -67.466187, -22.165321 )
+ga_view_zoom_set( 169.930801 )
+ga_view_center_set( -62.822662, -29.575111 )
+ga_view_zoom_set( 191.172150 )
+ga_view_center_set( -57.005890, -38.059181 )
+ga_view_zoom_set( 215.068665 )
+ga_view_center_set( -50.462219, -47.603798 )
+ga_view_zoom_set( 241.952240 )
+ga_view_center_set( -43.100464, -58.341591 )
+ga_view_zoom_set( 272.196259 )
+ga_view_center_set( -34.818542, -70.421638 )
+ga_view_zoom_set( 306.220795 )
+ga_view_center_set( -25.501282, -84.011635 )
+ga_view_zoom_set( 344.498383 )
+ga_view_aa_set( -110.658150, 0.311379, -60.437229 )
+ga_view_aa_set( -133.814545, -0.116043, -62.397282 )
+ga_view_aa_set( -112.809158, -0.582623, -61.512783 )
+INTEGER table_id
+REAL min
+REAL max
+elementprops_plot_scalar.create_v2( 36, 2, ["bot", "top"], "Thickness",  @
+table_id, min, max )
+res_data_load_elem_scalar( 0, table_id )
+res_data_title( 0, "ENodal", "Scalar", 1, [""] )
+res_display_fringe_create( "", "FreeFaces", 2, ["GR:bot", "GR:top"], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.0", "LabelStyle:Exponential,12,White,3"], TRUE )
+res_display_fringe_post( "", 0, "ENodal", TRUE, TRUE )
+$# Warning reported from application Results
+$#     The specified target nodes or elements already have associated results 
+$# data or the specified target is empty or invalid.
+ga_view_aa_set( -84.553596, -1.670860, -51.649277 )
+uil_viewport_post_groups.posted_groups( "default_viewport", 2, [ @
+"default_group", "mid"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 3, ["bot",  @
+"default_group", "mid"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 4, ["bot",  @
+"default_group", "mid", "top"] )
+uil_viewport_post_groups.posted_groups( "default_viewport", 3, ["bot",  @
+"default_group", "top"] )
+ga_group_current_set("bot")
+uil_viewport_post_groups.posted_groups( "default_viewport", 2, ["bot", "top"] )
+INTEGER table_id
+REAL min
+REAL max
+elementprops_plot_scalar.create_v2( 36, 2, ["bot", "top"], "Thickness",  @
+table_id, min, max )
+res_data_load_elem_scalar( 0, table_id )
+res_data_title( 0, "ENodal", "Scalar", 1, [""] )
+res_display_fringe_create( "", "FreeFaces", 2, ["GR:bot", "GR:top"], 12, [ @
+"Range:Fri_default_Fringe", "RangeOverwrite:ON", "FringeStyle:Discrete/Smooth" @
+, "Shade:None", "ElemEdge:FreeEdge,Blue,Solid,1", "Shrink:0",  @
+"TitleDisplay:ON", "MinMaxDisplay:ON", "ValueDisplay:OFF", "Filter:None",  @
+"ScaleFactor:1.0", "LabelStyle:Exponential,12,White,3"], TRUE )
+res_display_fringe_post( "", 0, "ENodal", TRUE, TRUE )
+ga_view_aa_set( -70.504425, 1.834562, -42.873684 )
+ga_view_center_set( 5.439575, 8.380997 )
+ga_view_zoom_set( 488.473816 )
+ga_view_center_set( 0.422119, 23.432617 )
+ga_view_zoom_set( 549.533020 )
+ga_view_center_set( -5.222290, 40.365707 )
+ga_view_zoom_set( 618.224670 )
+ga_view_aa_set( -58.967823, -7.990288, -60.458431 )
+$# Flushing the User Data Manager
+$# Journal file stopped recording at 03-Mar-25 13:41:23
