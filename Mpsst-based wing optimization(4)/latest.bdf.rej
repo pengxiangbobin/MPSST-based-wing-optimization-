@@ -1,0 +1,323 @@
+$REJECT (SEMTRN)  IGNORE INPUT CARD(S) BEFORE BEGIN BULK 
+SOL 101
+SOL 101
+$REJECT (SEMTRN)  CASE CONTROL CARD(S) AFTER  CEND 
+$ Direct Text Input for Global Case Control Data
+$>SUBCASE 1
+$ Subcase name : 2
+$>   SUBTITLE=2
+$REJECT (SEMTRN)  IGNORE INPUT CARD(S) AFTER  BEGIN BULK 
+$ Direct Text Input for Bulk Data
+$>MDLPRM   HDF5    0
+$ Elements and Element Properties for region : pshell.1
+$>PSHELL   1       2       .75     2               2
+$ Pset: "pshell.1" will be imported as: "pshell.1"
+$>CQUAD4   3       1       9       12      11      10      0.      0.
+$ Elements and Element Properties for region : pshell.2
+$>PSHELL   2       1       .6      1               1
+$ Pset: "pshell.2" will be imported as: "pshell.2"
+$>CQUAD4   736     2       659     210     43      44      0.      0.
+$ Elements and Element Properties for region : pshell.3
+$>PSHELL   3       1       .5      1               1
+$ Pset: "pshell.3" will be imported as: "pshell.3"
+$>CQUAD4   1       3       1       4       3       2       0.      0.
+$ Elements and Element Properties for region : pshell.4
+$>PSHELL   4       1       .375    1               1
+$ Pset: "pshell.4" will be imported as: "pshell.4"
+$>CQUAD4   761     4       162     642     640     160     0.      0.
+$ Elements and Element Properties for region : pshell.5
+$>PSHELL   5       1       .28     1               1
+$ Pset: "pshell.5" will be imported as: "pshell.5"
+$>CQUAD4   771     5       240     589     72      242     0.      0.
+$ Elements and Element Properties for region : pshell.6
+$>PSHELL   6       1       .1      1               1
+$ Pset: "pshell.6" will be imported as: "pshell.6"
+$>CQUAD4   777     6       228     600     598     230     0.      0.
+$ Elements and Element Properties for region : pshell.7
+$>PSHELL   7       1       .12     1               1
+$ Pset: "pshell.7" will be imported as: "pshell.7"
+$>CQUAD4   2383    7       350     421     895     768     0.      0.
+$ Elements and Element Properties for region : pshell.8
+$>PSHELL   8       1       .0625   1               1
+$ Pset: "pshell.8" will be imported as: "pshell.8"
+$>CQUAD4   2382    8       83      118     930     931     0.      0.
+$ Elements and Element Properties for region : pshell.9
+$>PSHELL   9       1       .175    1               1
+$ Pset: "pshell.9" will be imported as: "pshell.9"
+$>CQUAD4   3339    9       2095    2096    1211    1210    0.      0.
+$ Elements and Element Properties for region : pshell.10
+$>PSHELL   10      2       .2      2               2
+$ Pset: "pshell.10" will be imported as: "pshell.10"
+$>CQUAD4   3344    10      2106    1310    2108    2107    0.      0.
+$ Elements and Element Properties for region : pshell.17
+$>PSHELL   17      2       .085    2               2
+$ Pset: "pshell.17" will be imported as: "pshell.17"
+$>CQUAD4   2440    17      716     141     142     622     0.      0.
+$ Elements and Element Properties for region : conm2
+$>CONM2    174040  95677   0       0.      0.      0.      0.
+$ Elements and Element Properties for region : botback0
+$ Composite Property Reference Material: 70ceng
+$ Composite Material Description :
+$>PCOMP    18                                                      
+$ Pset: "botback0" will be imported as: "pcomp.18"
+$>CQUAD4   27      18      79      82      81      80
+$ Elements and Element Properties for region : botback9
+$ Composite Property Reference Material: 29ceng
+$ Composite Material Description :
+$>PCOMP    19                                                      
+$ Pset: "botback9" will be imported as: "pcomp.19"
+$>CQUAD4   28      19      85      86      83      84
+$ Elements and Element Properties for region : botback1
+$ Composite Property Reference Material: 86ceng
+$ Composite Material Description :
+$>PCOMP    20                                                      
+$ Pset: "botback1" will be imported as: "pcomp.20"
+$>CQUAD4   311     20      14      12      493     492
+$ Elements and Element Properties for region : botback2
+$ Composite Property Reference Material: 69ceng
+$ Composite Material Description :
+$>PCOMP    21                                                      
+$ Pset: "botback2" will be imported as: "pcomp.21"
+$>CQUAD4   313     21      495     496     494     9
+$ Elements and Element Properties for region : botback3
+$ Composite Property Reference Material: 104ceng
+$ Composite Material Description :
+$>PCOMP    22                                                      
+$ Pset: "botback3" will be imported as: "pcomp.22"
+$>CQUAD4   318     22      506     505     503     504
+$ Elements and Element Properties for region : botback4
+$ Composite Property Reference Material: 110ceng
+$ Composite Material Description :
+$>PCOMP    23                                                      
+$ Pset: "botback4" will be imported as: "pcomp.23"
+$>CQUAD4   26      23      78      77      2       1
+$ Elements and Element Properties for region : botback5
+$ Composite Property Reference Material: 72ceng
+$ Composite Material Description :
+$>PCOMP    24                                                      
+$ Pset: "botback5" will be imported as: "pcomp.24"
+$>CQUAD4   292     24      459     460     458     457
+$ Elements and Element Properties for region : botback6
+$ Composite Property Reference Material: 64ceng
+$ Composite Material Description :
+$>PCOMP    25                                                      
+$ Pset: "botback6" will be imported as: "pcomp.25"
+$>CQUAD4   297     25      469     467     468     470
+$ Elements and Element Properties for region : botback7
+$ Composite Property Reference Material: 57ceng
+$ Composite Material Description :
+$>PCOMP    26                                                      
+$ Pset: "botback7" will be imported as: "pcomp.26"
+$>CQUAD4   302     26      479     477     478     480
+$ Elements and Element Properties for region : botback8
+$ Composite Property Reference Material: 49ceng
+$ Composite Material Description :
+$>PCOMP    27                                                      
+$ Pset: "botback8" will be imported as: "pcomp.27"
+$>CQUAD4   329     27      522     523     521     520
+$ Elements and Element Properties for region : botfront0
+$ Composite Property Reference Material: 88ceng
+$ Composite Material Description :
+$>PCOMP    28                                                      
+$ Pset: "botfront0" will be imported as: "pcomp.28"
+$>CQUAD4   30      28      88      91      90      89
+$ Elements and Element Properties for region : botfront9
+$ Composite Property Reference Material: 11ceng
+$ Composite Material Description :
+$>PCOMP    29                                                      
+$ Pset: "botfront9" will be imported as: "pcomp.29"
+$>CQUAD4   31      29      93      94      95      9631
+$ Elements and Element Properties for region : botfront1
+$ Composite Property Reference Material: 85ceng
+$ Composite Material Description :
+$>PCOMP    30                                                      
+$ Pset: "botfront1" will be imported as: "pcomp.30"
+$>CQUAD4   80      30      185     45      186     184
+$ Elements and Element Properties for region : botfront2
+$ Composite Property Reference Material: 53ceng
+$ Composite Material Description :
+$>PCOMP    31                                                      
+$ Pset: "botfront2" will be imported as: "pcomp.31"
+$>CQUAD4   90      31      203     201     202     204
+$ Elements and Element Properties for region : botfront3
+$ Composite Property Reference Material: 92ceng
+$ Composite Material Description :
+$>PCOMP    32                                                      
+$ Pset: "botfront3" will be imported as: "pcomp.32"
+$>CQUAD4   55      32      139     140     110     35
+$ Elements and Element Properties for region : botfront4
+$ Composite Property Reference Material: 101ceng
+$ Composite Material Description :
+$>PCOMP    33                                                      
+$ Pset: "botfront4" will be imported as: "pcomp.33"
+$>CQUAD4   58      33      143     144     146     145
+$ Elements and Element Properties for region : botfront5
+$ Composite Property Reference Material: 86ceng
+$ Composite Material Description :
+$>PCOMP    34                                                      
+$ Pset: "botfront5" will be imported as: "pcomp.34"
+$>CQUAD4   63      34      155     153     154     156
+$ Elements and Element Properties for region : botfront6
+$ Composite Property Reference Material: 54ceng
+$ Composite Material Description :
+$>PCOMP    35                                                      
+$ Pset: "botfront6" will be imported as: "pcomp.35"
+$>CQUAD4   68      35      163     164     166     165
+$ Elements and Element Properties for region : botfront7
+$ Composite Property Reference Material: 48ceng
+$ Composite Material Description :
+$>PCOMP    36                                                      
+$ Pset: "botfront7" will be imported as: "pcomp.36"
+$>CQUAD4   73      36      175     174     173     176
+$ Elements and Element Properties for region : botfront8
+$ Composite Property Reference Material: 39ceng
+$ Composite Material Description :
+$>PCOMP    37                                                      
+$ Pset: "botfront8" will be imported as: "pcomp.37"
+$>CQUAD4   102     37      221     222     220     219
+$ Elements and Element Properties for region : topback0
+$ Composite Property Reference Material: 75ceng
+$ Composite Material Description :
+$>PCOMP    38                                                      
+$ Pset: "topback0" will be imported as: "pcomp.38"
+$>CQUAD4   673     38      989     990     988     17
+$ Elements and Element Properties for region : topback9
+$ Composite Property Reference Material: 23ceng
+$ Composite Material Description :
+$>PCOMP    39                                                      
+$ Pset: "topback9" will be imported as: "pcomp.39"
+$>CQUAD4   632     39      921     922     923     920
+$ Elements and Element Properties for region : topback1
+$ Composite Property Reference Material: 88ceng
+$ Composite Material Description :
+$>PCOMP    40                                                      
+$ Pset: "topback1" will be imported as: "pcomp.40"
+$>CQUAD4   669     40      10      11      986     985
+$ Elements and Element Properties for region : topback2
+$ Composite Property Reference Material: 64ceng
+$ Composite Material Description :
+$>PCOMP    41                                                      
+$ Pset: "topback2" will be imported as: "pcomp.41"
+$>CQUAD4   664     41      975     977     978     976
+$ Elements and Element Properties for region : topback3
+$ Composite Property Reference Material: 105ceng
+$ Composite Material Description :
+$>PCOMP    42                                                      
+$ Pset: "topback3" will be imported as: "pcomp.42"
+$>CQUAD4   660     42      967     969     970     968
+$ Elements and Element Properties for region : topback4
+$ Composite Property Reference Material: 102ceng
+$ Composite Material Description :
+$>PCOMP    43                                                      
+$ Pset: "topback4" will be imported as: "pcomp.43"
+$>CQUAD4   17      43      57      3       4       58
+$ Elements and Element Properties for region : topback5
+$ Composite Property Reference Material: 84ceng
+$ Composite Material Description :
+$>PCOMP    44                                                      
+$ Pset: "topback5" will be imported as: "pcomp.44"
+$>CQUAD4   642     44      938     940     941     939
+$ Elements and Element Properties for region : topback6
+$ Composite Property Reference Material: 52ceng
+$ Composite Material Description :
+$>PCOMP    45                                                      
+$ Pset: "topback6" will be imported as: "pcomp.45"
+$>CQUAD4   647     45      948     950     951     949
+$ Elements and Element Properties for region : topback7
+$ Composite Property Reference Material: 47ceng
+$ Composite Material Description :
+$>PCOMP    46                                                      
+$ Pset: "topback7" will be imported as: "pcomp.46"
+$>CQUAD4   624     46      135     906     907     138
+$ Elements and Element Properties for region : topback8
+$ Composite Property Reference Material: 44ceng
+$ Composite Material Description :
+$>PCOMP    47                                                      
+$ Pset: "topback8" will be imported as: "pcomp.47"
+$>CQUAD4   625     47      906     908     909     907
+$ Elements and Element Properties for region : topfront0
+$ Composite Property Reference Material: 85ceng
+$ Composite Material Description :
+$>PCOMP    48                                                      
+$ Pset: "topfront0" will be imported as: "pcomp.48"
+$>CQUAD4   448     48      687     686     50      688
+$ Elements and Element Properties for region : topfront9
+$ Composite Property Reference Material: 22ceng
+$ Composite Material Description :
+$>PCOMP    49                                                      
+$ Pset: "topfront9" will be imported as: "pcomp.49"
+$>CQUAD4   404     49      610     611     609     608
+$ Elements and Element Properties for region : topfront1
+$ Composite Property Reference Material: 81ceng
+$ Composite Material Description :
+$>PCOMP    50                                                      
+$ Pset: "topfront1" will be imported as: "pcomp.50"
+$>CQUAD4   436     50      669     670     668     667
+$ Elements and Element Properties for region : topfront2
+$ Composite Property Reference Material: 65ceng
+$ Composite Material Description :
+$>PCOMP    51                                                      
+$ Pset: "topfront2" will be imported as: "pcomp.51"
+$>CQUAD4   431     51      659     660     658     44
+$ Elements and Element Properties for region : topfront3
+$ Composite Property Reference Material: 92ceng
+$ Composite Material Description :
+$>PCOMP    52                                                      
+$ Pset: "topfront3" will be imported as: "pcomp.52"
+$>CQUAD4   48      52      130     131     62      9318
+$ Elements and Element Properties for region : topfront4
+$ Composite Property Reference Material: 93ceng
+$ Composite Material Description :
+$>PCOMP    53                                                      
+$ Pset: "topfront4" will be imported as: "pcomp.53"
+$>CQUAD4   412     53      626     627     625     624
+$ Elements and Element Properties for region : topfront5
+$ Composite Property Reference Material: 83ceng
+$ Composite Material Description :
+$>PCOMP    54                                                      
+$ Pset: "topfront5" will be imported as: "pcomp.54"
+$>CQUAD4   417     54      636     637     635     634
+$ Elements and Element Properties for region : topfront6
+$ Composite Property Reference Material: 50ceng
+$ Composite Material Description :
+$>PCOMP    55                                                      
+$ Pset: "topfront6" will be imported as: "pcomp.55"
+$>CQUAD4   422     55      646     647     645     644
+$ Elements and Element Properties for region : topfront7
+$ Composite Property Reference Material: 43ceng
+$ Composite Material Description :
+$>PCOMP    56                                                      
+$ Pset: "topfront7" will be imported as: "pcomp.56"
+$>CQUAD4   393     56      588     127     72      589
+$ Elements and Element Properties for region : topfront8
+$ Composite Property Reference Material: 31ceng
+$ Composite Material Description :
+$>PCOMP    57                                                      
+$ Pset: "topfront8" will be imported as: "pcomp.57"
+$>CQUAD4   397     57      594     596     597     595
+$ Referenced Material Records
+$ Material Record : mat1.1
+$ Description of Material :
+$>MAT1     1       1.+7   3800000. .32     .1
+$ Material Record : hexcel8551
+$ Description of Material : Date: 21-Sep-24           Time: 15:07:28
+$>MAT8*    2               2.298598+7      1299939.3       .356
+$ Multipoint Constraints of the Entire Model
+$>RBE3     174020          95686   123456  1.      123     17      18
+$ Nodes of the Entire Model
+$>GRID     1              1425.864427.9977170.2058
+$ Loads for Load Case : 2
+$>SPCADD   2       7
+$ Displacement Constraints of Load Set : spc.7
+$>SPC1     7       123     32      33      88      89      90      91
+$ Nodal Forces of Load Set : force.19
+$>FORCE*   19              11611           0               19722.688
+$ Nodal Forces of Load Set : moment.17
+$>MOMENT*  17              11611           0               304276.97
+$ Pressure Loads of Load Set : pload4.8.2D
+$>PLOAD4   8       26     3.3875113.3875113.3875113.387511
+$ Pressure Loads of Load Set : pload4.9.2D
+$>PLOAD4   9       17     2.4158592.4158592.4158592.415859
+$ Referenced Coordinate Frames
+$>ENDDATA 09db7f5a
+
