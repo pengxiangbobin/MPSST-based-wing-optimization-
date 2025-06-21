@@ -1,2 +1,2 @@
 # MPSST-based-wing-optimization-
-The wing optimization codes based on the MPSST method will be uploaded in five separate folders, including MATLAB optimization scripts and model files. NASTRAN software is required for simulation. Users must consolidate all files into a single directory before use.
+The wing optimization codes based on the MPSST method will be uploaded in five separate folders, including MATLAB optimization scripts and model files. NASTRAN software is required for simulation. Users must consolidate all files into a single directory before use. The main.m file is the main program. Before use, you need to change the addresses of MATLAB, Patran, etc. in the computer.
